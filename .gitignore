@@ -1,0 +1,70 @@
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# Build Folders (bin and obj)
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+Generated\ Files/
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# OS generated files
+.DS_Store
+Icon?
+Desktop.ini
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of PackageReference
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+# Others
+_ReSharper*/
+*.resharper
+*.vs/
+*.idea/
+
+# DotCover
+*.dotCover
+
+# Rider
+.idea/
+*.sln.iml
+
+# Test Results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Publish profiles
+*.pubxml
+*.publishproj
+
+# Local History for Visual Studio
+.localhistory/
+
+# IIS Express
+.vsconfig
+.vs/ (optional if you don’t want user settings like breakpoints)
+
+# Backup & log files
+*.bak
+*.log
+
+# Temporary
