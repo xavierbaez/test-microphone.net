@@ -1,37 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MicrophoneTestApp.MainPage"
-             BackgroundColor="{AppThemeBinding Light='White' Dark='#1e1e1e'}">
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MicrophoneTestApp.MainPage"
+    Title="Microphone Test"
+    BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
 
-    <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Center">
+    <VerticalStackLayout
+      Padding="30"
+      Spacing="20"
+      VerticalOptions="Center"
+      HorizontalOptions="Center">
 
-        <Label 
-            Text="Microphone Test"
-            FontSize="32"
-            HorizontalOptions="Center"
-            TextColor="{AppThemeBinding Light='Black' Dark='White'}" />
+        <Label
+        Text="Microphone Test"
+        FontSize="28"
+        HorizontalOptions="Center"
+        TextColor="{AppThemeBinding Light=Black, Dark=White}" />
 
-        <Button
-            Text="Record"
-            x:Name="RecordButton"
-            BackgroundColor="#0078D7"
-            TextColor="White"
-            Clicked="OnRecordClicked" />
+        <Button 
+        Text="Record"
+        Clicked="OnRecordClicked"
+        BackgroundColor="{AppThemeBinding Light=#007ACC, Dark=#1E90FF}"
+        TextColor="White"/>
 
-        <Button
-            Text="Stop"
-            x:Name="StopButton"
-            BackgroundColor="#D83B01"
-            TextColor="White"
-            Clicked="OnStopClicked" />
+        <Button 
+        Text="Stop"
+        Clicked="OnStopClicked"
+        BackgroundColor="{AppThemeBinding Light=#A52A2A, Dark=#8B0000}"
+        TextColor="White"/>
 
-        <Button
-            Text="Play"
-            x:Name="PlayButton"
-            BackgroundColor="#107C10"
-            TextColor="White"
-            Clicked="OnPlayClicked" />
+        <Button 
+        Text="Play"
+        Clicked="OnPlayClicked"
+        BackgroundColor="{AppThemeBinding Light=#228B22, Dark=#006400}"
+        TextColor="White"/>
 
     </VerticalStackLayout>
 </ContentPage>
